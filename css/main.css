@@ -1,0 +1,217 @@
+:root {
+  --primary-color: #009cff;
+  --secondary-color: #a66bbe;
+  --light-color: #f3f3f3;
+  --off-white-color: #bbd0ff;
+  --dark-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+svg {
+  font-size: 4rem;
+}
+
+svg:hover {
+  color: var(--primary-color);
+  transition: all ease-in-out 0.5s;
+}
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: roboto;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: large;
+  background: var(--light-color);
+}
+
+/* utility classes */
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.xl {
+  font-size: 2.5rem;
+}
+
+.xxl {
+  font-size: 3.5rem;
+}
+
+.btn {
+  background: linear-gradient(to right, #c38fd8, #55b7f4);
+  color: var(--light-color);
+  padding: 1rem 1.5rem;
+}
+
+.btn:hover {
+  box-shadow: 3px 3px 20px 3px #55b7f4;
+  transition: all ease-in-out 0.5s;
+}
+
+/* nav bar */
+#main-nav {
+  height: 5rem;
+
+  background: var(--light-color);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /* box-shadow: ; */
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  padding-top: -3rem;
+}
+
+#main-nav .logo {
+  margin-top: -1.2rem;
+  width: 120px;
+  height: 120px;
+  float: left;
+}
+
+#main-nav ul {
+  margin-top: -1.5rem;
+  justify-self: end;
+  display: flex;
+}
+
+#main-nav ul li a {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+ul a:hover {
+  color: var(--primary-color);
+  transition: all ease-in-out 0.5s;
+}
+
+/* showcase section */
+#showcase {
+  background: var(--off-white-color);
+}
+
+#showcase .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase-text {
+  width: 40rem;
+}
+
+.showcase-img img {
+  background: url(../img/img1.jpg) no-repeat center center/cover;
+  margin-top: 10rem;
+  width: 25rem;
+  height: 40rem;
+}
+
+/* about me section */
+#about {
+  background: var(--light-color);
+}
+
+#about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  width: 40rem;
+}
+
+.about-img img {
+  background: url(../img/img2.jpg) no-repeat center center/cover;
+  margin-top: 10rem;
+  width: 25rem;
+  height: 35rem;
+}
+
+/* work section */
+#work {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.cards {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  width: 60rem;
+}
+
+.icon:hover {
+  color: var(--primary-color);
+  transition: all ease-in-out 0.5s;
+}
+
+/* gallary section */
+#gallary {
+  background: var(--off-white-color);
+  margin-top: 8rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+#gallary img {
+  background: url(../img/img3.jpg) no-repeat center center/cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 5rem;
+  border-radius: 10px;
+}
+
+.gallary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: -1rem;
+  margin-left: -7rem;
+}
+
+/* contact section  */
+#contact {
+  text-align: center;
+  margin-top: 9rem;
+}
+
+#contact .contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer section */
+#main-footer {
+  background: var(--off-white-color);
+  height: 5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
